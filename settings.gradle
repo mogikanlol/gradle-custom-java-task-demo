@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'gradle-custom-java-task-demo'
+
+include 'liquibase-migrations',
+        'jooq-generated-data',
+        'application'
