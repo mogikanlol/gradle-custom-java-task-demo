@@ -15,6 +15,10 @@ task runApp(type: JavaExec) {
 
     mainClass = 'internal.Main'
     dependsOn(":liquibase-migrations:build")
+
+    logging.captureStandardOutput LogLevel.INFO
+
+    outputs.dir('src/main/java/')
 }
 
 compileJava {
